@@ -1,0 +1,54 @@
+/* Tablet Layout: 768px. */
+
+@media (max-width: 768px), only screen and (max-device-width: 768px) {
+.wpm_mobile_center{  float:none; text-align:center; }
+.wpm_header{ min-height:80px; }
+.wpm_logo{ margin: 0 auto; margin-top: 20px; height: 42px;}
+.wpm_navber{ margin: 0px; }
+.wpm_menu li a{ padding:10px 10px; }
+.navbar-toggle{ margin-top:-42px;  }
+.navbar-collapse{ margin-top:20px; }
+.navbar{ min-height: 0px; }
+
+
+.wpm_popup_area a i{  float:right; margin: 0px 20px 20px 0px; }
+.wpm_another_box i { left:325px;}
+.border_img { margin-bottom:50px;}
+.wpm_contact_area h3{ margin-top:30px; }
+
+
+.wpm_slider_area{ padding-top: 110px; }
+.wpm_slider_area h1{ font-size: 28px; margin-bottom: 25px;}
+.wpm_slider_area .btn{ margin-bottom: 15px; }
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right{ font-size: 30px; top: 45%; }
+
+}
+
+
+
+@media (max-width: 480px), only screen and (max-device-width: 480px) {
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right{ font-size: 18px; top: 45%; }
+.wpm_slider_area .btn{display: none; }
+.wpm_slider_area h1{ font-size: 15px; margin-bottom: 5px;}
+.carousel-indicators{ display: none; }
+}
+
+
+@media (max-width: 320px), only screen and (max-device-width: 320px) {
+
+.wpm_logo{ height: 35px;}
+
+.navbar-toggle {
+    margin-top: -30px;
+}
+
+.wpm_slider_area {
+    padding-top: 114px;
+}
+
+.wpm_slider_area h1{ display: none; }
+
+.view a.info{ display: none; }
+
+}
