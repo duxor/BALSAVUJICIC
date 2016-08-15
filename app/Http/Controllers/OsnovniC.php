@@ -57,9 +57,12 @@ class OsnovniC extends Controller{
         ];
         return $this->getFoto(null, $podaci);
     }
-    public function getVest($slug){
+    public function getVesti($slug){
         $podaci=Vesti::dajVesti(false, $slug);
         return view('vesti')->with(compact('podaci'));
+    }
+    public function getNews($slug){
+        return $this->getVesti($slug);
     }
 
     public function postMail(){dd(Input::except('_token'));

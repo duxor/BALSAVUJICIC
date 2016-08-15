@@ -4,13 +4,11 @@
 {{--SLAJDER::START--}}
 <section class="wpm_slider_area">
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
             <li data-target="#carousel-example-generic" data-slide-to="2"></li>
         </ol>
-        <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
 
             <div class="item active">
@@ -136,7 +134,13 @@
             <div class="row">
                 <div class="col-sm-3">
                     <div class="wpm_service_box bg0">
-                        <i class="fa fa-code" data-uk-scrollspy="{cls:'uk-animation-scale-up', repeat: true}"></i>
+                        <i data-uk-scrollspy="{cls:'uk-animation-scale-up', repeat: true}">
+                            <svg width="100%" height="70%" viewBox="0 0 70 70"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <image xlink:href="/images/tennis-ball.svg" x="0" y="0" height="70" width="70" />
+                            </svg>
+                        </i>
                         <h2>{{trans('tekstovi.program-plan-naslov')}}</h2>
                         <div class="wpm_border"></div>
                         <p>{{trans('tekstovi.program-plan-opis')}}</p>
@@ -145,8 +149,14 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="wpm_service_box bg1">
-                        <i class="fa fa-code" data-uk-scrollspy="{cls:'uk-animation-scale-up', repeat: true}"></i>
-                        <h2>{{trans('tekstovi.program-takmicari-naslov')}}</h2>
+                        <i data-uk-scrollspy="{cls:'uk-animation-scale-up', repeat: true}">
+                            <svg width="100%" height="70%" viewBox="0 0 70 70"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <image xlink:href="/images/tennis-ball.svg" x="0" y="0" height="70" width="70" />
+                            </svg>
+                        </i>
+                        <h{{ $h=Session::has('applocale')?(Session::get('applocale')=='en'?'3':'2'):2 }}>{{trans('tekstovi.program-takmicari-naslov')}}</h{{ $h }}>
                         <div class="wpm_border"></div>
                         <p>{{trans('tekstovi.program-takmicari-opis')}}</p>
                         <a href="/program/{{trans('tekstovi.program-takmicari-slug')}}" class="btn btn-primary">{{trans('tekstovi.vise')}}</a>
@@ -154,7 +164,13 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="wpm_service_box bg2">
-                        <i class="fa fa-code" data-uk-scrollspy="{cls:'uk-animation-scale-up', repeat: true}"></i>
+                        <i data-uk-scrollspy="{cls:'uk-animation-scale-up', repeat: true}">
+                            <svg width="100%" height="70%" viewBox="0 0 70 70"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <image xlink:href="/images/tennis-ball.svg" x="0" y="0" height="70" width="70" />
+                            </svg>
+                        </i>
                         <h2>{{trans('tekstovi.program-amateri-naslov')}}</h2>
                         <div class="wpm_border"></div>
                         <p>{{trans('tekstovi.program-amateri-opis')}}</p>
@@ -163,7 +179,13 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="wpm_service_box bg3">
-                        <i class="fa fa-code" data-uk-scrollspy="{cls:'uk-animation-scale-up', repeat: true}"></i>
+                        <i data-uk-scrollspy="{cls:'uk-animation-scale-up', repeat: true}">
+                            <svg width="100%" height="70%" viewBox="0 0 70 70"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <image xlink:href="/images/tennis-ball.svg" x="0" y="0" height="70" width="70" />
+                            </svg>
+                        </i>
                         <h2>{{trans('tekstovi.program-sparing-naslov')}}</h2>
                         <div class="wpm_border"></div>
                         <p>{{trans('tekstovi.program-sparing-opis')}}</p>
@@ -188,10 +210,10 @@
             <div class="col-sm-12">
                 <div class="wpm_mixitup_menu">
                     <a href="/{{strtolower(trans('tekstovi.foto'))}}/1" title="{{trans('tekstovi.foto')}} {{trans('tekstovi.nav-galerija')}} 1">{{trans('tekstovi.foto')}} {{trans('tekstovi.nav-galerija')}} 1</a>
+                    <a href="/{{strtolower(trans('tekstovi.foto'))}}/2" title="{{trans('tekstovi.foto')}} {{trans('tekstovi.nav-galerija')}} 2">{{trans('tekstovi.foto')}} {{trans('tekstovi.nav-galerija')}} 2</a>
+                    <a href="/{{strtolower(trans('tekstovi.foto'))}}/3" title="{{trans('tekstovi.foto')}} {{trans('tekstovi.nav-galerija')}} 3">{{trans('tekstovi.foto')}} {{trans('tekstovi.nav-galerija')}} 3</a>
 
-                    <a>{{trans('tekstovi.foto')}} {{trans('tekstovi.nav-galerija')}} 1</a>
-                    <a>{{trans('tekstovi.foto')}} {{trans('tekstovi.nav-galerija')}} 1</a>
-                    <a>{{trans('tekstovi.video')}} 1</a>
+                    <a href="/{{strtolower(trans('tekstovi.video'))}}" title="{{trans('tekstovi.video')}}">{{trans('tekstovi.video')}}</a>
                 </div>
                 <div id="Container">
                     <div class="mix all" data-my-order="1">
@@ -265,22 +287,22 @@
         <div class="row">
             <h2 data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true}">{{trans('tekstovi.nav-vesti-txt')}}</h2>
             <h5 class="sub_title">{{trans('tekstovi.vesti-opis')}}</h5>
-            <div class="wpm_border"> <div class="wpm_inside_border"> </div>  </div>
+            <div class="wpm_border"><div class="wpm_inside_border"></div></div>
             <div class="col-sm-8" data-uk-scrollspy="{cls:'uk-animation-slide-left',}">
-                <img src="/images/slider/01.jpg" alt="">
+                <img src="/images/slider/01.jpg" alt="{{$vesti['vesti'][$vesti['active']]['naslov']}}">
                 <div class="blog_link_area">
-                    <h3><a href="/vest/{{$vesti['vesti'][$vesti['active']]['slug']}}">{{$vesti['vesti'][$vesti['active']]['naslov']}}</a></h3>
+                    <h3><a href="/{{trans('tekstovi.nav-vesti')}}/{{$vesti['vesti'][$vesti['active']]['slug']}}">{{$vesti['vesti'][$vesti['active']]['naslov']}}</a></h3>
                     <a href="#" class="date">{{$vesti['vesti'][$vesti['active']]['datum']}}</a>
                     {{--<span> In:<a href="#">Web tutorials</a></span>
                     <span> Note:<a href="#">22 comment</a></span>--}}
                 </div>
-                <p class="para">{{$vesti['vesti'][$vesti['active']]['part-txt']}} <a href="/vest/{{$vesti['vesti'][$vesti['active']]['slug']}}">{{trans('tekstovi.vise')}}...</a></p>
+                <p class="para">{{$vesti['vesti'][$vesti['active']]['part-txt']}} <a href="/{{trans('tekstovi.nav-vesti')}}/{{$vesti['vesti'][$vesti['active']]['slug']}}">{{trans('tekstovi.vise')}}...</a></p>
             </div>
             <div class="col-sm-4" data-uk-scrollspy="{cls:'uk-animation-slide-right',}">
                 <h3>{{trans('tekstovi.vesti-sve')}}</h3>
                 <ul class="list-group wpm_list">
                     @foreach($vesti['vesti'] as $vest)
-                        <a href="/vest/{{$vest['slug']}}"><li class="list-group-item">{{$vest['naslov']}} <small class="float-right">{{$vest['datum']}}</small></li></a>
+                        <a href="/{{trans('tekstovi.nav-vesti')}}/{{$vest['slug']}}"><li class="list-group-item">{{$vest['naslov']}} <small class="float-right">{{$vest['datum']}}</small></li></a>
                     @endforeach
                 </ul>
             </div>
@@ -320,8 +342,8 @@
                         </svg>
 				    </span>
                     <span class="input input--nao">
-                        <input name="email" class="input__field input__field--nao" type="text" id="input-1" />
-                        <label class="input__label input__label--nao" for="input-1">
+                        <input name="email" class="input__field input__field--nao" type="text" id="input-2" />
+                        <label class="input__label input__label--nao" for="input-2">
                             <span class="input__label-content input__label-content--nao">Email</span>
                         </label>
                         <svg class="graphic graphic--nao" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
@@ -329,15 +351,23 @@
                         </svg>
 				    </span>
                     <span class="input input--nao">
-                        <input name="naslov" class="input__field input__field--nao" type="text" id="input-1" />
-                        <label class="input__label input__label--nao" for="input-1">
+                        <input name="naslov" class="input__field input__field--nao" type="text" id="input-3" />
+                        <label class="input__label input__label--nao" for="input-3">
                             <span class="input__label-content input__label-content--nao">{{trans('tekstovi.kontakt-naslov')}}</span>
                         </label>
                         <svg class="graphic graphic--nao" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
                             <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
                         </svg>
 				    </span>
-                    <textarea name="poruka" class="massage_area wpm_textarea" cols="40" rows="8" placeholder="{{trans('tekstovi.kontakt-poruka')}}"> </textarea>
+                    <span class="input input--nao">
+                        <textarea name="poruka" class="input__field input__field--nao" cols="40" rows="8" id="input-4"></textarea>
+                        <label class="input__label input__label--nao" for="input-4">
+                            <span class="input__label-content input__label-content--nao">{{trans('tekstovi.kontakt-poruka')}}</span>
+                        </label>
+                        <svg class="graphic graphic--nao" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+                            <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+                        </svg>
+				    </span>
                     <input class="wpm_send_btn" type="submit" value="{{trans('tekstovi.kontakt-posalji')}}">
                 {!! Form::close() !!}
             </div>
