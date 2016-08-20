@@ -3,83 +3,53 @@
 
 {{--SLAJDER::START--}}
 <section class="wpm_slider_area">
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <div id="mslider" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#mslider" data-slide-to="0" class="active"></li>
+            <li data-target="#mslider" data-slide-to="1"></li>
+            <li data-target="#mslider" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
-
             <div class="item active">
                 <img src="/images/slider/01.jpg" alt="nase nade">
                 <div class="carousel-caption">
-                    <h1>Tenisrke i teniseri</h1><br>
-
-                    <a href="#"><button class="btn btn-default hvr-pulse-shrink" type="submit">Get Started</button></a>
-                    <a href="#"><button class="btn btn-default hvr-pulse-shrink" type="submit">Learn More</button></a>
+                    <h1>Tenisrke i teniseri</h1>
                 </div>
             </div>
             <div class="item">
                 <img src="/images/slider/02.jpg" alt="...">
                 <div class="carousel-caption">
-                    <h1>Budući teniski šampioni</h1><br>
-
-                    <a href="#"><button class="btn btn-default hvr-pulse-shrink" type="submit">Get Started</button></a>
-                    <a href="#"><button class="btn btn-default hvr-pulse-shrink" type="submit">Learn More</button></a>
+                    <h1>Budući teniski šampioni</h1>
                 </div>
             </div>
-
             <div class="item">
                 <img src="/images/slider/03.jpg" alt="...">
-
                 <div class="carousel-caption">
-                    <h1>Budući teniski šampioni</h1><br>
-
-                    <a href="#"><button class="btn btn-default hvr-pulse-shrink" type="submit">Get Started</button></a>
-                    <a href="#"><button class="btn btn-default hvr-pulse-shrink" type="submit">Learn More</button></a>
+                    <h1>Budući teniski šampioni</h1>
                 </div>
             </div>
-
             <div class="item">
-
                 <img src="/images/slider/04.jpg" alt="...">
-
                 <div class="carousel-caption">
-                    <h1>Moja malenkost</h1><br>
-
-
-                    <a href="#"><button class="btn btn-default hvr-pulse-shrink" type="submit">Get Started</button></a>
-                    <a href="#"><button class="btn btn-default hvr-pulse-shrink" type="submit">Learn More</button></a>
+                    <h1>Moja malenkost</h1>
                 </div>
             </div>
-
             <div class="item">
-
                 <img src="/images/slider/05.jpg" alt="...">
-
                 <div class="carousel-caption">
-                    <h1>Lorem ipsum dolor sit amet</h1><br>
-
-
-                    <a href="#"><button class="btn btn-default hvr-pulse-shrink" type="submit">Get Started</button></a>
-                    <a href="#"><button class="btn btn-default hvr-pulse-shrink" type="submit">Learn More</button></a>
+                    <h1>Moja malenkost</h1>
                 </div>
             </div>
-
         </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <a class="left carousel-control" href="#mslider" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <a class="right carousel-control" href="#mslider" role="button" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
     </div>
-
 </section>
 {{--slajder::end--}}
 
@@ -87,17 +57,17 @@
 <section class="wpm_about_area" id="{{trans('tekstovi.nav-omeni')}}">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 text-center">
+            <div class="col-sm-12">
                 <h2 data-uk-scrollspy="{cls:'uk-animation-fade',}">{{trans('tekstovi.nav-omeni-txt')}}</h2>
-                <h5 class="sub_title">{!! trans('tekstovi.omeni-opis') !!}</h5>
+                <p class="sub_title">{!! trans('tekstovi.omeni-opis') !!}</p>
                 <div class="wpm_border"> <div class="wpm_inside_border"> </div>  </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-6 text-justify">
                 <div class="clearfix"></div>
                 {!! trans('tekstovi.omeni-opis-lijevo') !!}
-                <a href="/o-meni" class="btn btn-primary">{{trans('tekstovi.vise')}}</a>
+                <a href="/o-meni">{{trans('tekstovi.vise')}}...</a>
             </div>
             <div class="col-sm-6 wpm_ing_col">
                 <img src="/images/pozadina.jpg" width="1900" height="1330" data-uk-scrollspy="{cls:'uk-animation-slide-right', }">
@@ -127,11 +97,12 @@
             <div class="row">
                 <div class="col-sm-12">
                     <h1>{{trans('tekstovi.program-naslov')}}</h1>
-                    <p>{{trans('tekstovi.program-opis')}}</p>
+                    <br><br>
+                    {{--<p>{{trans('tekstovi.program-opis')}}</p>--}}
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row program">
                 <div class="col-sm-3">
                     <div class="wpm_service_box bg0">
                         <i data-uk-scrollspy="{cls:'uk-animation-scale-up', repeat: true}">
@@ -144,7 +115,7 @@
                         <h2>{{trans('tekstovi.program-plan-naslov')}}</h2>
                         <div class="wpm_border"></div>
                         <p>{{trans('tekstovi.program-plan-opis')}}</p>
-                        <a href="/program/{{trans('tekstovi.program-plan-slug')}}" class="btn btn-primary">{{trans('tekstovi.vise')}}</a>
+                        <a href="/program/{{trans('tekstovi.program-plan-slug')}}" class="btn btn-primary">{{trans('tekstovi.vise')}}...</a>
                     </div>
                 </div>
                 <div class="col-sm-3">
@@ -159,7 +130,7 @@
                         <h{{ $h=Session::has('applocale')?(Session::get('applocale')=='en'?'3':'2'):2 }}>{{trans('tekstovi.program-takmicari-naslov')}}</h{{ $h }}>
                         <div class="wpm_border"></div>
                         <p>{{trans('tekstovi.program-takmicari-opis')}}</p>
-                        <a href="/program/{{trans('tekstovi.program-takmicari-slug')}}" class="btn btn-primary">{{trans('tekstovi.vise')}}</a>
+                        <a href="/program/{{trans('tekstovi.program-takmicari-slug')}}" class="btn btn-primary">{{trans('tekstovi.vise')}}...</a>
                     </div>
                 </div>
                 <div class="col-sm-3">
@@ -174,7 +145,7 @@
                         <h2>{{trans('tekstovi.program-amateri-naslov')}}</h2>
                         <div class="wpm_border"></div>
                         <p>{{trans('tekstovi.program-amateri-opis')}}</p>
-                        <a href="/program/{{trans('tekstovi.program-amateri-slug')}}" class="btn btn-primary">{{trans('tekstovi.vise')}}</a>
+                        <a href="/program/{{trans('tekstovi.program-amateri-slug')}}" class="btn btn-primary">{{trans('tekstovi.vise')}}...</a>
                     </div>
                 </div>
                 <div class="col-sm-3">
@@ -189,7 +160,7 @@
                         <h2>{{trans('tekstovi.program-sparing-naslov')}}</h2>
                         <div class="wpm_border"></div>
                         <p>{{trans('tekstovi.program-sparing-opis')}}</p>
-                        <a href="/program/{{trans('tekstovi.program-sparing-slug')}}" class="btn btn-primary">{{trans('tekstovi.vise')}}</a>
+                        <a href="/program/{{trans('tekstovi.program-sparing-slug')}}" class="btn btn-primary">{{trans('tekstovi.vise')}}...</a>
                     </div>
                 </div>
             </div>
@@ -302,7 +273,7 @@
                 <h3>{{trans('tekstovi.vesti-sve')}}</h3>
                 <ul class="list-group wpm_list">
                     @foreach($vesti['vesti'] as $vest)
-                        <a href="/{{trans('tekstovi.nav-vesti')}}/{{$vest['slug']}}"><li class="list-group-item">{{$vest['naslov']}} <small class="float-right">{{$vest['datum']}}</small></li></a>
+                        <a href="/{{trans('tekstovi.nav-vesti')}}/{{$vest['slug']}}"><li class="list-group-item">{{$vest['naslov']}} <small class="float-right">{{$vest['datum']}}</small><br clear="all"></li></a>
                     @endforeach
                 </ul>
             </div>
@@ -321,11 +292,11 @@
                     <p>TK Đukić</p>
                     <p>Partizanske avijacije 1</p>
                     <p>Bežanijska kosa</p>
-                    <p>11000 Beogra , Srbija</p>
+                    <p>11000 {{trans('tekstovi.beograd')}}, Srbija</p>
                     <p>{{trans('tekstovi.kontakt-telefon')}}: +381 63 839 86 65</p>
                     <p>Email: <a href="mailto:contact@balsavujicic.com" class="style1">contact@balsavujicic.com</a></p>
                 </div>
-                <div class="embed-responsive embed-responsive-16by9 wpm_maph ">
+                <div class="embed-responsive embed-responsive-16by9 wpm_maph">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2332.394079310231!2d20.387583650521634!3d44.82408748384491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a658f65979265%3A0xd710f74cf7e0d8ad!2sPartizanske+avijacije+1%2C+Beograd!5e1!3m2!1sen!2srs!4v1470350302674" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </div>
@@ -368,7 +339,7 @@
                             <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
                         </svg>
 				    </span>
-                    <input class="wpm_send_btn" type="submit" value="{{trans('tekstovi.kontakt-posalji')}}">
+                    <input class="btn wpm_send_btn" type="submit" value="{{trans('tekstovi.kontakt-posalji')}}">
                 {!! Form::close() !!}
             </div>
         </div>

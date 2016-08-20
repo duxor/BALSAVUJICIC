@@ -7,13 +7,14 @@
     <title>Balsa Vujicic - Teniserski trener</title>
 
     {{--STILOVI::SATRT--}}
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="/css/animation.css" />
+    <link rel="stylesheet" type="text/css" href="/css/css.css" />
     <link rel="stylesheet" type="text/css" href="/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="/style.css" />
-    <link rel="stylesheet" type="text/css" href="/responsive.css" />
+    {{--<link rel="stylesheet" type="text/css" href="/responsive.css" />--}}
     <link rel="stylesheet" type="text/css" href="/css/set2.css" />
-    <style type="text/css">.style1 {color: #000000}.limg{width:auto;float:left;padding:5px}.float-right{float: right}</style>
+    <link href="https://fonts.googleapis.com/css?family=Trocchi" rel="stylesheet">
+    <style type="text/css">
+        .style1 {color: #000000}.limg{width:auto;float:left;padding:5px}.float-right{float: right}</style>
     {{--stilovi::end--}}
 </head>
 
@@ -68,49 +69,42 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-sm-2">
-                <h4>KONTAKT</h4>
-                <p>+381 63 839 86 65</p>
-                <a href="mailto:contact@balsavujicic.com">contact@balsavujicic.com</a><a href="#"></a>        </div>
-            <div class="col-sm-2">
-                <ul>
-                    <li><a href="index.html">POCETNA</a></li>
-                    <li><a href="about.html">BALŠA</a></li>
-                    <li><a href="service.html">SERVICES</a></li>
-                    <li><a href="portfolio.html">GALERIJA</a></li>
-                    <li><a href="blog.html">BLOG</a></li>
-                </ul>
+            <div class="col-sm-4">
+                <p><strong>{{trans('tekstovi.nav-kontakt-txt')}}</strong><br><br>
+                TK Đukić<br>
+                <p>Partizanske avijacije 1<br>
+                <p>Bežanijska kosa<br>
+                <p>11000 {{trans('tekstovi.beograd')}}, {{trans('tekstovi.srbija')}}<br>
+                <p>{{trans('tekstovi.kontakt-telefon')}}: +381 63 839 86 65<br>
+                <p>Email: <a href="mailto:contact@balsavujicic.com">contact@balsavujicic.com</a><br>
             </div>
             <div class="col-sm-5">
-                <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
-                <form>
-                    <div class="input-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
-                        <div class="input-group-addon"><button type="submit" class="btn btn-default">Submit</button></div>
+                <a href="/foto" title="">
+                    <div class="wpm_img_grup">
+                        <img src="/images/work/1.jpg" width="50" height="50" alt="Teniserski trener Balša Vijičić - Img">
+                        <img src="/images/work/2.jpg" width="50" height="50" alt="Teniserski trener Balša Vijičić - Img">
+                        <img src="/images/work/3.jpg" width="50" height="50" alt="Teniserski trener Balša Vijičić - Img">
+                        <img src="/images/work/4.jpg" width="50" height="50" alt="Teniserski trener Balša Vijičić - Img">
+                        <img src="/images/work/5.jpg" width="50" height="50" alt="Teniserski trener Balša Vijičić - Img">
+                        <img src="/images/work/6.jpg" width="50" height="50" alt="Teniserski trener Balša Vijičić - Img">
+                        <img src="/images/work/7.jpg" width="50" height="50" alt="Teniserski trener Balša Vijičić - Img">
+                        <img src="/images/work/8.jpg" width="50" height="50" alt="Teniserski trener Balša Vijičić - Img">
+                        <img src="/images/work/9.jpg" width="50" height="50" alt="Teniserski trener Balša Vijičić - Img">
+                        <img src="/images/work/10.jpg" width="50" height="50" alt="Teniserski trener Balša Vijičić - Img">
                     </div>
-                </form>
-                <div class="social_icon">
-                    <a href="#"><i class="fa fa-twitter-square"></i></a>
-                    <a href="#"><i class="fa fa-facebook-square"></i></a>
-                    <a href="#"><i class="fa fa-google-plus-square"></i></a>
-                    <a href="#"><i class="fa fa-skype"></i></a>
-                    <a href="#"><i class="fa fa-dribbble"></i></a>
-                    <div class="clearfix"></div>
-                </div>
+                </a>
+                <br clear="all"><br>
+                <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FBalsa-Vujicic%2F248654798522767&width=176&layout=button_count&action=like&size=small&show_faces=true&share=true&height=46&appId=309465932735687" width="176" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
             </div>
-            <div class="col-sm-3">
-                <div class="wpm_img_grup">
-                    <img src="/images/work/01.jpg">
-                    <img src="/images/work/02.jpg">
-                    <img src="/images/work/03.jpg">
-                    <img src="/images/work/04.jpg">
-                    <img src="/images/work/05.jpg">
-                    <img src="/images/work/06.jpg">
-                    <img src="/images/work/07.jpg">
-                    <img src="/images/work/08.jpg">
-                    <img src="/images/work/09.jpg">
-                    <img src="/images/work/03.jpg">
-                </div>
+            <div class="col-sm-3 text-right">
+                <ul>
+                    <li><a href="/">{{trans('tekstovi.nav-pocetna-txt')}}</a></li>
+                    <li><a href="/{{trans('tekstovi.nav-omeni')}}">{{trans('tekstovi.nav-omeni-txt')}}</a></li>
+                    <li><a href="/{{trans('tekstovi.nav-program')}}">{{trans('tekstovi.nav-program-txt')}}</a></li>
+                    <li><a href="/foto">{{trans('tekstovi.nav-galerija-txt')}}</a> </li>
+                    <li><a href="/#{{trans('tekstovi.nav-vesti')}}">{{trans('tekstovi.nav-vesti-txt')}}</a></li>
+                    <li><a href="/#{{trans('tekstovi.nav-kontakt')}}">{{trans('tekstovi.nav-kontakt-txt')}}</a></li>
+                </ul>
             </div>
         </div>
     </div>
@@ -120,11 +114,12 @@
     <div class="container">
         <div class="col-sm-12 text-center wpm_mobile_center">
             <p>Copyright &copy; {{date('Y')}} <strong>balsavujicic.com</strong></p>
-            <div class="copytext">
-                Design & Develop By <a href="mailto:#" target="_blank" class="copylink">rudi</a> &<a href="http://dusanperisic.com" target="_blank" class="copylink">duXor</a>
-            </div>
+            <p>
+                <small>
+                    Design & Develop By <a href="mailto:#" target="_blank" class="copylink">rudi</a> &<a href="http://dusanperisic.com" target="_blank" class="copylink">duXor</a>
+                </small>
+            </p>
         </div>
-        <div class="clearfix"></div>
     </div>
 </section>
 

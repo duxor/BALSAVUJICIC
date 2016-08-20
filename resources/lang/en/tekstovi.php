@@ -1,12 +1,13 @@
 <?php
 
 return [
-
+    'beograd'=>'Belgrade',
+    'srbija'=>'Serbia',
     'nav-pocetna' => 'home',
     'nav-pocetna-txt' => 'Home',
     'nav-omeni' => 'about',
     'nav-omeni-txt' => 'About me',
-    'omeni-opis' => 'My name is Balsa Vujicic and I am an accredited tennis coach. I work with amateurs as well as professional tennis players. Tennis has been my life for the past 20 years.',
+    'omeni-opis' => 'My name is <strong>Bаlsа Vujicic</strong> and I am an accredited tennis coach. I work with amateurs as well as professional tennis players. Tennis has been my life for the past 20 years.',
     'omeni-opis-lijevo' => '
 <p>Even as a boy I began playing tennis actively, and after the Jelena Gencic camp, in which I spent time with the future number one, I seriously start competing. I enter the top 10 players in Yugoslavia and begin palying the first Serbian league.</p>
 <p>With 20, I decide to become a professional tennis coach and prove myself in that job. I worked as a coach at TK Partizan, where tennis aces, such as Ana Ivanovic came from, before I decide to begin working individually.</p>
